@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15805660-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-15805660-1');
+    </script>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Alquiler de apartamentos en Estepona, paseo marítimo, vistas al mar">
+    
+    <link rel="shortcut icon" href="{% static 'landing/Imagenes/favicon.ico' %}"/>
+
+    <title>Estepona pisos alquiler</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'landing/assets/css/bootstrapflaty.css' %}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap-3.3.6/docs/assets/js/ie-emulation-modes-warning.js" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap-3.3.6/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+ <!--   <link href="css/carousel.css" rel="stylesheet"> -->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+        <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Estepona alquilar piso</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Inicio</a></li>
+           <!-- INICIA Menu desplegable Pisos-->                   
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ver Pisos <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="catalogo_4A.html">Piso 4º A</a></li>
+                    <li><a href="catalogo_4B.html">Piso 4º B</a></li>
+                    <li><a href="catalogo_4C.html">Piso 4º C</a></li>
+                    <li><a href="catalogo_4D.html">Piso 4º D</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Más pisos</li>
+                    <li><a href="turismoRural.html">Turismo Rural</a></li>
+                  </ul>
+                </li> 
+  	 		<!-- INICIA Menu desplegable Disponibilidad -->
+                <li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Disponibilidad<span class="caret"></span>
+                            </a>
+                 <ul class="dropdown-menu" role="menu">
+                   <li><a href="calendario4A.html">Calendario 4º A</a></li>
+                   <li><a href="calendario4B.html">Calendario 4º B</a></li>             
+                   <li><a href="calendario4C.html">Calendario 4º C</a></li>
+                   <li><a href="calendario4D.html">Calendario 4º D</a></li>
+                 </ul>
+               </li>     
+                  <!-- Fin Menu desplegable Disponibilidad-->
+                        <li><a href="precios.html">Precios</a></li>
+                        <li class="hidden"><a href="#">Noticias</a></li> 
+                               
+         <!-- INICIA Menu desplegable Estepona Imágenes -->                        
+                 		<li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Conocer Estepona<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                            	<li><a href="callesestepona.html">Calles Estepona</a></li>
+                                <li class="divider"></li>
+                                <li><a href="orquidarioestepona.html">Orquidario Estepona</a></li>
+          <!-- Fin Menu desplegable Estepona Imágenes-->                         
+                            </ul>
+                        </li>              		  
+                 <li><a href="contactar.php">Contactar</a></li>  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div> <!-- div container -->
+    </div> <!-- div navbar-wrapper -->
+<!-- FIN Menú -->
+<!-- ============= Carousel Antiguo ================== -->
+	<div class="container">
+		<div class="col-md-12">
+          	<article class="post clearfix">
+          
+<!-- Inicio del carousel-1 -->
+            	<div id="carousel-1" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicadores (pequeños circulitos para elegir fotos) -->
+                	<ol class="carousel-indicators"> <!-- Lista desordenada -->
+                    	<li data-target="#carousel-1" data-slide-to="0" class="active"></li> <!-- targeamos al id="carousel-1" .Si No PONEMOS Active no se verán.ponemos 0 porque en programación se empieza a contar en 0 -->
+                        <li data-target="#carousel-1" data-slide-to="1"></li> <!-- se duplica en función del nº de slides -->
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                        <li data-target="#carousel-1" data-slide-to="3"></li>
+                    </ol>
+                        <!-- FIN de los indicadores -->
+                    
+<!-- Contenedor de los slide (es la parte interesante -->
+					<div class="carousel-inner" role="listbox">
+                    	<div class="item active"> <!-- a los slide Bootstrap les llama item --><!-- Ojo con el active -->
+                        	<img src="{% static 'landing/img/Pueblo-torre-apaisadalg.jpg' %}" alt="" height="241" class="img-responsive">
+                          	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                           	  <h3>Vista del casco antiguo</h3>
+                                    <p>Iglesia de los Remedios al fondo</p>
+                                </div> <!-- carousel-caption -->
+                        
+                        </div> <!-- item -->
+                    <!-- 2º item o slide -->    
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/img/Paseo-Maritimo-apaisadalg.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h3>Paseo marítimo de Estepona</h3>
+                                    <p>Estepona dispone de un gran paseo marítimo</p>
+                                </div> <!-- carousel-caption -->
+                        
+                        </div> <!-- item -->
+                        
+                   <!-- 3º item o slide-->     
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/img/Playa-apaisadalg.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h3>Playa de la Rada</h3>
+                                    <p>La playa abrazada por Estepona</p>
+                                </div> <!-- carousel-caption -->
+                        
+                        </div> <!-- item -->
+                  <!-- 4º item o slide-->     
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/img/Paseo-Maritimo-apaisada-2lg.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h3>Vista de la playa hacia el este</h3>
+                                    <p>La playa de la rada con la Punta de la Plata al fondo</p>
+                                </div> <!-- carousel-caption -->
+                        
+                        </div> <!-- item -->
+                    </div> <!-- carousel-inner --> 
+						
+<!-- Controles flechas -->                    	
+                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                	</a>
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                	</a>
+                    <br>
+                    
+                </div> <!-- carousel-1 -->
+        </div> <!-- col-md-12 -->        
+      </div> <!-- container 2 --> 
+
+
+<!-- ============= FIN Carousel Antiguo ================== -->
+    <!-- Carousel
+    ================================================== -->
+<!--    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+<!--      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/pruebas/20150624_114551 cut Punta de la plata.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Vista panorámica</h1>
+            <p>Su privilegiada situación hace posible ver una vista panorámica impresionante sobre toda la playa de Estepona</p>
+        <!--      <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+ <!--           </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/pruebas/Edificio-Iberia-Paseo-Situacion cut ampil.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Vista del Edificio</h1>
+              <p>Se aprecia su cercanía a la playa y su situación en el paseo marítimo</p>
+           <!--   <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
+ <!--           </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/pruebas/20150624_114615 Bandera slide.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Vista desde los pisos</h1>
+              <p>Hasta que no se está en alguna de las terrazas no es posible comprender la espectacularidad de las vistas, las fotos no hacen justicia, a pesar de su belleza, a lo que se siente ante la grandiosidad de las vistas.</p>
+             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+ <!--           </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+<!-- Inicio articulo entrada -->
+	<div class="container">
+        	
+            <div class="col-lg-12 text-justify">
+         	
+           <h2>Bienvenidos a Estepona</h2> 	
+<h4>Estepona es una ciudad situada en la Costa del Sol</h4>
+<p>Su privilegiada situación la hace destino turístico de primera magnitud tanto el turimo nacional como internacional. Cuenta con numerosas playas en todo su litoral, siendo la <em>playa de la Rada</em> la que mayor extensión y servicios ofrece. Situada a lo largo de todo el pueblo, ha merecido todos los años la confianza de la adminstración contando siempre con bandera azul, por la calidad de sus instalaciones. <b>Estepona</b> cuenta con Hoteles y Restaurantes de primera categoría, Puerto Deportivo y varios campos de golf. Además de la modernidad de sus instalaciones hoteleras, el visitante puede encotrar un centro urbano muy bien conservado, con las carecterísticas típicas de los pueblos andaluces y marineros.</p> 
+
+<p>Nuestros pisos están situados en el <b>Edificio Iberia</b>, probablemente el más emblemático de <b>Estepona</b> por su envidiable situación. Está situado en primerísima linea de playa, de tal forma que no tendrá que cruzar ninguna calle para bañarse, por encontrarse en el paseo marítimo. Además de estar en la playa, se encuentra en el mismo centro de <b>Estepona</b>, ya que el cruce de las dos calles más importantes del pueblo, <em>la calle Real y la Terraza</em>, se encuentra justo enfrente del edificio.
+</p>
+                             
+       		</div> <!-- col-lg-12 text-justify -->      
+       </div> <!-- Row -->
+   
+      <br>  
+
+<!-- FIn artículo entrada -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static 'landing/Imagenes/4 A/Piso A Iberia Terraza pequena 1 cutmodf.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Piso 4º A</h2>
+          <p>El Edificio Iberia es probablemente el más emblemático de Estepona por su privilegiada situación. Es un edificio de 5 plantas, con ascensor y zonas verdes. En primera línea de playa. En el paseo marítimo frente a la calle principal. .</p>
+          <p><a class="btn btn-info" href="catalogo_4A.html" role="button">Ver más &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static 'landing/Imagenes/4 B/Edf_Fachada_Lat_AtardecerCUTmodfwmdf.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Piso 4º B</h2>
+          <p>Vistas impresionantes. Muy luminoso. Todo exterior. Dos terrazas con increíbles vistas a la playa y al paseo marítimo de Estepona. En pleno centro de la ciudad. Sin necesidad de cruzar la calle para ir a la playa.</p>
+          <p><a class="btn btn-info" href="catalogo_4B.html" role="button">Ver más &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static 'landing/Imagenes/4 C/carrusel/Iberia 4C terraza grande 2Cutwmdf.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Piso 4º C</h2>
+          <p>Todos los pisos están situados en la cuarta plata del edificio Iberia, en pleno Paseo marítimo de Estepona y frente a la calle principal, por lo que la playa queda a menos de 50 metros y el centro de Estepona enfrente del edificio.</p>
+          <p><a class="btn btn-info" href="catalogo_4C.html" role="button">Ver más &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+        <div class="col-lg-3">
+          <img class="img-circle" src="{% static 'landing/Imagenes/4 D/Estepona-Plaza-Lit.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Piso 4º D</h2>
+          <p>Muy buenas Vistas al centro del pueblo y al mar . Todas las habitaciones dan al exterior. Muy luminoso. Dispone como todos de internet. Al estar en el centro dispone de todo lo necesario en las cercanías.</p>
+          <p><a class="btn btn-info" href="catalogo_4D.html" role="button">Ver más &raquo;</a></p>
+        </div><!-- /.col-lg-3 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Paseo por las calles de Estepona. <span class="text-muted">Las entrañables calles andaluzas</span></h2>
+          <p class="lead">Estepona ha rehabilitado todas sus calles en los últimos cuatro años. Esto ha cambiado toda la fisonomía del pueblo y ha realzado aúm más si cabe, su belleza como ciudad andaluza y marinera.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'landing/img/body/20150411_191311 portada.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <br>
+          <p><a class="btn btn-default" href="callesestepona.html" role="button">Ver más &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Orchidarium de Estepona. <span class="text-muted">El mayor orquidario de Europa.</span></h2>
+          <p class="lead">En su afán por la modernidad y convertirse en el primer pueblo de turismo de calidad de la Costa del Sol, Estepona ha construido este orquidario único en Europa por su gran variedad de especies. El edificio es digno de visitarse tanto por su contenido como por su diseño modernista.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'landing/img/body/20150411_193116.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <br>
+          <p><a class="btn btn-default" href="orquidarioestepona.html" role="button">Ver más &raquo;</a></p> 
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Alrededores de nuestros pisos.<span class="text-muted"> Paseo marítimo y playas de Estepona</span></h2>
+          <p class="lead">Debido a su envidiable situación, a 20 metros de la playa y a 50 metros del centro de Estepona, tanto las vistas desde los pisos, como sus alrededores son de una gran belleza, como se pueden ver en las fotos. Situado en el paseo marítimo, sin necesidad de cruzar ninguna calle para ir a la playa o pasear en los kilómetros de paseo que dispone Estepona a lo largo de sus playas.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'landing/img/body/20150924_150010 edited cut.jpg' %}" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+      
+<!-- Inicio Carrusel -->
+	 <!-- Inicio slide -->
+         
+<!--           <div class="col-md-12">
+          	<article class="post clearfix">
+          
+<!-- Inicio del carousel-1 -->
+<!--             	<div id="carousel-1" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicadores (pequeños circulitos para elegir fotos) -->
+<!--                 	<ol class="carousel-indicators"> <!-- Lista desordenada -->
+<!--                     	<li data-target="#carousel-1" data-slide-to="0" class="active"></li> <!-- targeamos al id="carousel-1" .Si No PONEMOS Active no se verán.ponemos 0 porque en programación se empieza a contar en 0 -->
+ <!--                        <li data-target="#carousel-1" data-slide-to="1"></li> <!-- se duplica en función del nº de slides -->
+<!--                         <li data-target="#carousel-1" data-slide-to="2"></li>
+                        <li data-target="#carousel-1" data-slide-to="3"></li>
+                    </ol>
+                        <!-- FIN de los indicadores -->
+                    
+<!-- Contenedor de los slide (es la parte interesante -->
+<!-- 					<div class="carousel-inner" role="listbox">
+                    	<div class="item active"> <!-- a los slide Bootstrap les llama item --><!-- Ojo con el active -->
+<!--                         	<img src="img/Pueblo-torre-apaisadalg.jpg" class="img-responsive" alt="">
+<!--                           	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+<!--                                	<h3>Vista del casco antiguo</h3>
+                                    <p>Iglesia de los Remedios al fondo</p>
+                                </div> <!-- carousel-caption -->
+                        
+<!--                         </div> <!-- item -->
+                    <!-- 2º item o slide -->    
+<!--                         <div class="item"> <!-- a los slide Bootstrap les llama item -->
+<!--                         	<img src="img/Paseo-Maritimo-apaisadalg.jpg" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+<!--                                 	<h3>Paseo marítimo de Estepona</h3>
+                                    <p>Estepona dispone de un gran paseo marítimo</p>
+                                </div> <!-- carousel-caption -->
+                        
+<!--                         </div> <!-- item -->
+                        
+                   <!-- 3º item o slide-->     
+<!--                         <div class="item"> <!-- a los slide Bootstrap les llama item -->
+<!--                         	<img src="img/Playa-apaisadalg.jpg" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+<!--                                 	<h3>Playa de la Rada</h3>
+                                     <p>La playa abrazada por Estepona</p>
+                                </div> <!-- carousel-caption -->
+                        
+ <!--                        </div> <!-- item -->
+                  <!-- 4º item o slide-->     
+<!--                         <div class="item"> <!-- a los slide Bootstrap les llama item -->
+<!--                         	<img src="img/Paseo-Maritimo-apaisada-2lg.jpg" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+<!--                                 	<h3>Vista de la playa hacia el este</h3>
+                                    <p>La playa de la rada con la Punta de la Plata al fondo</p>
+                                </div> <!-- carousel-caption -->
+                        
+<!--                         </div> <!-- item -->
+<!--                     </div> <!-- carousel-inner --> 
+						
+<!-- Controles flechas -->                    	
+<!--                     <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                	</a>
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                	</a>
+                    <br>
+                    
+                </div> <!-- carousel-1 -->
+<!--         </div> <!-- col-md-12 -->        
+<!--       </div> <!-- container 2 --> 
+
+<!-- FIN Carrusel -->
+
+      <!-- FOOTER -->
+<!--      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer> -->
+ 
+  <!-- FOOTER antiguo-->     
+      <footer class="jumbotron-fm">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-xs-6">
+                	<h3 class="">Estepona pisos en alquiler</h3>
+                    <h5>info@esteponapisos.es</h5>
+                    <h5>Teléfono: +34 622889634
+                </div> <!-- col-xs-6 -->
+                <br>
+                <div class="col-xs-2">
+                	<ul class="list-inline alert-danger">
+                    	<li><a href="index.html">Inicio</a></li>
+                        
+                        <li><a href="contactar.php">Contacto</a></li>
+                    </ul>
+                    
+                    <p>&copy; 2009 por esteponapisos.es</p>
+                </div> <!-- 2ªcol-xs-6 -->
+            </div> <!-- row -->
+            	
+        </div> <!-- container --> 
+    </footer>   
+    
+  <!-- FIN FOOTER ANTIGUO -->     
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{% static 'landing/assets/js/bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{% static 'landing/assets/js/vendor/holder.min.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
