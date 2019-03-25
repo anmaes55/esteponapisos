@@ -11,3 +11,12 @@ DEBUG = False
 # ALLOWED_HOSTS = []
 
 MEDIA_ROOT = os.path.join(PUBLIC_ROOT, 'media')
+
+# To send emails using SMTP
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.dreamhost.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'juan@quitiweb.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

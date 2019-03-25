@@ -17,3 +17,6 @@ INTERNAL_IPS = [
 ]
 
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
+
+# To send emails to the console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
