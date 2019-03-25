@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15805660-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-15805660-1');
+    </script>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Alquiler de apartamentos en Estepona, paseo marítimo, vistas al mar">
+
+    <link rel="shortcut icon" href="{% static 'landing/Imagenes/FaviconEP2.ico' %}"/>
+
+    <title>Estepona pisos alquiler</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'landing/assets/css/bootstrapflaty.css' %}" rel="stylesheet">
+<!--    <link href="{% static 'landing/assets/css/bootstrap.min.css' %}" rel="stylesheet"> -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap-3.3.6/docs/assets/js/ie-emulation-modes-warning.js" rel="stylesheet">
+    <link href="{% static 'landing/assets/css/estilos.css" rel="stylesheet' %}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap-3.3.6/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+ <!--   <link href="css/carousel.css" rel="stylesheet"> -->
+  </head>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+        <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Estepona alquilar piso</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Inicio</a></li>
+           <!-- INICIA Menu desplegable Pisos-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ver Pisos <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="catalogo_4A">Piso 4º A</a></li>
+                    <li><a href="catalogo_4B">Piso 4º B</a></li>
+                    <li><a href="catalogo_4C">Piso 4º C</a></li>
+                    <li><a href="catalogo_4D">Piso 4º D</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Más pisos</li>
+                    <li><a href="turismoRural">Turismo Rural</a></li>
+                  </ul>
+                </li>
+  	 		<!-- INICIA Menu desplegable Disponibilidad -->
+                <li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Disponibilidad<span class="caret"></span>
+                            </a>
+                 <ul class="dropdown-menu" role="menu">
+                   <li><a href="calendario4A">Calendario 4º A</a></li>
+                   <li><a href="calendario4B">Calendario 4º B</a></li>
+                   <li><a href="calendario4C">Calendario 4º C</a></li>
+                   <li><a href="calendario4D">Calendario 4º D</a></li>
+                 </ul>
+               </li>
+                  <!-- Fin Menu desplegable Disponibilidad-->
+                        <li><a href="precios">Precios</a></li>
+                        <li class="hidden"><a href="#">Noticias</a></li>
+
+         <!-- INICIA Menu desplegable Estepona Imágenes -->
+                 		<li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Conocer Estepona<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                            	<li><a href="callesestepona">Calles Estepona</a></li>
+                                <li class="divider"></li>
+                                <li><a href="orquidarioestepona">Orquidario Estepona</a></li>
+          <!-- Fin Menu desplegable Estepona Imágenes-->
+                            </ul>
+                        </li>
+                 <li><a href="contactar.php">Contactar</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div> <!-- div container -->
+    </div> <!-- div navbar-wrapper -->
+<!-- FIN Menú -->
+
+  {% block main %}
+  {% endblock %}
+
+        <!-- FOOTER antiguo-->
+
+      <footer class="jumbotron-fm">
+
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-xs-6">
+                	<h3 class="">Estepona pisos en alquiler</h3>
+                    <h5>info@esteponapisos.es</h5>
+                    <h5>Teléfono: +34 622889634
+                </div> <!-- col-xs-6 -->
+                <p class="pull-right"><a href="#">Volver arriba</a></p>
+                <br>
+              <!--  <div class="col-xs-2">
+                	<ul class="list-inline alert-danger">
+                    	<li><a href="/">Inicio</a></li>
+
+                        <li><a href="contactar.php">Contacto</a></li>
+                    </ul> -->
+
+                    <p>&copy; 2009 por esteponapisos.es</p>
+                </div> <!-- 2ªcol-xs-6 -->
+            </div> <!-- row -->
+
+        </div> <!-- container -->
+    </footer>
+
+  <!-- FIN FOOTER ANTIGUO -->
+
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{% static 'landing/assets/js/bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="{% static 'landing/assets/js/vendor/holder.min.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
