@@ -1,0 +1,42 @@
+{% extends "landing/base.html" %}
+
+{% load static %}
+
+{% block main %}
+
+<body>
+<div class="container">
+				<h3>Contáctame</h3>
+			<!--	<p>Os podremos atender en: C/ Forja, nº25 Puerto de la torre Málaga 29190 TELÉFONO:  626 28 93 06</p> -->
+				<form novalidate="novalidate" method="post" name="contact">
+					{% csrf_token %}
+					<div class="row gtr-uniform">
+						<div class="col-6 col-12-xsmall">
+							<!-- <input type="text" name="name" id="name" placeholder="Nombre" /> -->
+							{{ form.nombre }}
+						</div>
+						<div class="col-6 col-12-xsmall">
+							<!-- <input type="email" name="email" id="email" placeholder="Email" /> -->
+							{{ form.from_email }}
+						</div>
+						<div class="col-12">
+							<!-- <input type="text" name="subject" id="subject" placeholder="Asunto" /> -->
+							{{ form.asunto }}
+						</div>
+						<div class="col-12">
+							<!-- <textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea> -->
+							{{ form.mensaje }}
+						</div>
+						<div class="col-12">
+							<ul class="actions">
+								<li><input type="submit" class="primary" value="Enviar Mensaje" /></li>
+								<li><input type="reset" value="Borrar todo" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+</body>
+</html>
+
+{% endblock %}

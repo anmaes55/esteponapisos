@@ -1,0 +1,258 @@
+{% extends "landing/base.html" %}
+
+{% load static %}
+
+{% block main %}
+
+<body>
+<!-- Inicio Carrusel -->
+                    <div class="modal fade" id="ventana2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Header de la ventana -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Imágenes del Orchidarium de Estepona</h4>
+                                </div>
+                        <!-- Contenido de la ventana -->
+                        <div class="modal-body">
+          <!-- Empieza el carrusel -->
+          <div class="container">
+<!-- Inicio slide --->
+
+          <div class="col-md-6">
+          	<article class="post clearfix">
+
+<!-- Inicio del carousel-1 -->
+            	<div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores (pequeños circulitos para elegir fotos) -->
+                	<ol class="carousel-indicators"> <!-- Lista desordenada -->
+                    	<li data-target="#carousel-1" data-slide-to="0" class="active"></li> <!-- targeamos al id="carousel-1" .Si No PONEMOS Active no se verán.ponemos 0 porque en programación se empieza a contar en 0 -->
+                        <li data-target="#carousel-1" data-slide-to="1"</li> <!-- se duplica en función del nº de slides -->
+                        <li data-target="#carousel-1" data-slide-to="2"</li>
+                        <li data-target="#carousel-1" data-slide-to="3"</li>
+                        <li data-target="#carousel-1" data-slide-to="4"</li>
+                        <li data-target="#carousel-1" data-slide-to="5"</li>
+                        <li data-target="#carousel-1" data-slide-to="6"</li>
+                        <li data-target="#carousel-1" data-slide-to="7"</li>
+                        <li data-target="#carousel-1" data-slide-to="8"</li>
+                        <li data-target="#carousel-1" data-slide-to="9"</li>
+                        <li data-target="#carousel-1" data-slide-to="10"</li>
+                        <li data-target="#carousel-1" data-slide-to="11"</li>
+                        <li data-target="#carousel-1" data-slide-to="12"</li>
+                        <li data-target="#carousel-1" data-slide-to="13"</li>
+                        <li data-target="#carousel-1" data-slide-to="14"</li>
+                        <li data-target="#carousel-1" data-slide-to="15"</li>
+                        <!-- Son 16 slides porque empieza por 0 -->
+                    </ol>
+                        <!-- FIN de los indicadores -->
+
+<!-- Contenedor de los slide (es la parte interesante -->
+					<div class="carousel-inner" role="listbox">
+
+                    	<div class="item active"> <!-- a los slide Bootstrap les llama item --><!-- Ojo con el active -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_193116cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4>Orchidarium exterior</h4>
+                                </div> <!-- carousel-caption -->
+                        </div> <!-- item -->
+
+                    <!-- 2º item o slide -->
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_193515cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                </div> <!-- carousel-caption -->
+                        </div> <!-- item -->
+
+                   <!-- 3º item o slide-->
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_193956cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                </div> <!-- carousel-caption -->
+                        </div> <!-- item -->
+
+                  <!-- 4º item o slide-->
+                        <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194136cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+                 <!-- 5º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194304cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+                <!-- 6º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194152cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+              <!-- 7º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194358cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+             <!-- 8º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194455cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+             <!-- 9º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_194938_009cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+           <!-- 10º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_195423cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+           <!-- 11º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_200404cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+
+        <!-- 12º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_200832cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+        <!-- 13º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_201117cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+        <!-- 14º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_201210cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+        <!-- 15º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_201448cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4></h4>
+                                    <p></p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+        <!-- 16º item o slide-->
+                       <div class="item"> <!-- a los slide Bootstrap les llama item -->
+                        	<img src="{% static 'landing/Imagenes/Calles Estepona/Orchidarium/20150411_201841cutwmdf.jpg' %}" class="img-responsive" alt="">
+                            	<div class="carousel-caption hidden-xs hidden-sm"> <!-- Es el texto del item (slide-foto) -->
+                                	<h4>Mural del pescador</h4>
+                                    <p>Al lado del Orchidarium</p>
+                                </div> <!-- carousel-caption -->
+
+                        </div> <!-- item -->
+
+
+
+    </div> <!-- container -->
+
+
+<!-- Controles flechas -->
+                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                	</a>
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                	</a>
+                    <br>
+
+                </div> <!-- carousel-2 -->
+            </article>
+        </div> <!-- col-md-12 -->
+       </div> <!-- container 2 -->
+
+
+          <!-- Acaba carrusel -->
+
+                        </div> <!-- modal-body -->
+                       <!-- Footer de la ventana -->
+                       <div class="modal-footer">
+                       		<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                       </div> <!-- modal-footer -->
+
+                    </div> <!-- modal-content -->
+                </div> <!-- modal-dialog -->
+            </div> <!-- modal fade" id="ventana2 -->
+
+   <!-- FIN Botones -->
+
+</body>
+</html>
+
+{% endblock %}

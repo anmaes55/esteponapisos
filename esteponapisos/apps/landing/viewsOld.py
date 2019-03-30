@@ -38,7 +38,7 @@ def catalogo_4D(request):
 
 
 def contactar(request):
-    template = loader.get_template('landing/contactar.html')
+    template = loader.get_template('landing/index.html')
 
     if request.method == 'GET':
         form = ContactForm()
