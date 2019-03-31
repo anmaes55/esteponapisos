@@ -2,6 +2,7 @@
 from os import environ
 from .base import *
 
+# from .base import *
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = environ["SECRET_KEY"],
 
@@ -14,6 +15,7 @@ MEDIA_ROOT = os.path.join(PUBLIC_ROOT, 'media')
 
 # To send emails using SMTP
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+SERVER_EMAIL = 'info@esteponapisos.es'
 ADMINS = (('Juan Ruiz', 'juan@quitiweb.com'),)
 EMAIL_HOST = 'smtp.dreamhost.com'
 EMAIL_PORT = 465

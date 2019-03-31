@@ -11,6 +11,7 @@ urlpatterns = [
     path('catalogo_4C', views.catalogo_4C, name='catalogo_4C'),
     path('catalogo_4D', views.catalogo_4D, name='catalogo_4D'),
     path('contactar', views.contactar, name='contactar'),
+    path('mensaje-enviado', views.mensaje_enviado, name='mensaje-enviado'),
 
     path('carrusel', views.carrusel, name='carrusel'),
 
