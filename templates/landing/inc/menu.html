@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'landing/assets/css/bootstrapflaty.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+             <a class="navbar-brand" href="#">Estepona alquilar piso</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Inicio</a></li>
+           <!-- INICIA Menu desplegable Pisos-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ver Pisos <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="catalogo_4A">Piso 4º A</a></li>
+                    <li><a href="catalogo_4B">Piso 4º B</a></li>
+                    <li><a href="catalogo_4C">Piso 4º C</a></li>
+                    <li><a href="catalogo_4D">Piso 4º D</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="hidden dropdown-header">Más pisos</li>
+                    <li class="hidden"><a href="turismoRural">Turismo Rural</a></li>
+                  </ul>
+                </li>
+  	 		<!-- INICIA Menu desplegable Disponibilidad -->
+                <li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Disponibilidad<span class="caret"></span>
+                            </a>
+                 <ul class="dropdown-menu" role="menu">
+                   <li><a href="#">Calendario 4º A</a></li>
+                   <li><a href="#">Calendario 4º B</a></li>
+                   <li><a href="#">Calendario 4º C</a></li>
+                   <li><a href="#">Calendario 4º D</a></li>
+                 </ul>
+               </li>
+                  <!-- Fin Menu desplegable Disponibilidad-->
+                        <li class="hidden"><a href="precios">Precios</a></li>
+                        <li class="hidden"><a href="noticias">Noticias</a></li>
+
+         <!-- INICIA Menu desplegable Estepona Imágenes -->
+                 		<li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Conocer Estepona<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                            	<li><a href="callesestepona">Calles Estepona</a></li>
+                                <li class="divider"></li>
+                                <li><a href="orquidarioestepona">Orquidario Estepona</a></li>
+          <!-- Fin Menu desplegable Estepona Imágenes-->
+                            </ul>
+                        </li>
+                 <li><a href="contactar">Contactar</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div> <!-- div container -->
+    </div> <!-- div navbar-wrapper -->
+<!-- FIN Menú -->
+{% block main %}
+{% endblock %}
+</body>
+</html>

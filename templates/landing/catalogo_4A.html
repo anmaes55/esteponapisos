@@ -2,17 +2,18 @@
 
 {% load static %}
 
+{% block link_extra %}
+	<!-- <script type="text/javascript" src="http://ipwg.site90.net/jquery-1.2.3.min.js" xmlns="http://www.w3.org/1999/html"></script>
+	<script type="text/javascript" src="http://ipwg.site90.net/thickbox_compressed.js"></script>
+	<link rel="stylesheet" href="http://ipwg.site90.net/thickbox.css" type="text/css" media="screen" /> -->
+{% endblock %}
+
 {% block main %}
-<script type="text/javascript" src="http://ipwg.site90.net/jquery-1.2.3.min.js" xmlns="http://www.w3.org/1999/html"></script>
-<script type="text/javascript" src="http://ipwg.site90.net/thickbox_compressed.js"></script>
-<link rel="stylesheet" href="http://ipwg.site90.net/thickbox.css" type="text/css" media="screen" />
 
     <section class="jumbotron-fm">
     	<div class="container">
         <!--	 -->
-            <a class="thumb pull-right">  
-                    	<img class="jumbotron-img" src="{% static 'landing/Imagenes/paseolg.gif" alt="Estepona paseo marítimo">
-                    </a>
+
             <br> 
             <h1>Estepona pisos alquiler</h1>
             <p>Pisos con vistas al mar en el centro de Estepona</p>                
@@ -27,10 +28,11 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
+		  <br>
 <!-- Primera fila de fotos -->      
       	<div class="col-lg-4">
         	<div class="thumbnail">                   	
-                <img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Salon cut.jpg' %}" alt="">
+                <img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Salon-cut.png' %}" alt="">
              <!--  <a class="thickbox" href="{% static 'landing/Imagenes/4 A/Piso A Iberia Salon cut.jpg' %}"><img width="680" height="510" class="alignleft" alt="" src="{% static 'landing/Imagenes/4 A/Piso A Iberia Salon cut.jpg' %}" /></a> -->
                     		<div class="caption">                        	
                             <p>Salón</p>             			
@@ -39,7 +41,7 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Salon Mueble cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Salon-Mueble-cut.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Mueble salón</p>              			
                     		</div> <!-- caption -->
@@ -47,7 +49,7 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Salon Ana cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Salon-Ana-cut.png' %}" alt="">
                     <div class="caption">                        	
                             <p>Salón comedor</p>               			
                     		</div> <!-- caption -->
@@ -59,7 +61,7 @@
 	<div class="row">
   		<div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia 0 Dormit Matrimonio.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-0-Dormit-Matrimonio.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Dormitorio principal</p>                  			
                     		</div> <!-- caption -->
@@ -67,7 +69,7 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia 0 Dormit Matrimonio Comoda.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-0-Dormit-Matrimonio-Comoda.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Dormitorio principal y salida terraza</p>                			
                     		</div> <!-- caption -->
@@ -75,18 +77,19 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Dormitorio 2 camas A Lit.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Dormitorio-2-camas-A-Lit.png' %}" alt="">
                     <div class="caption">                        	
                             <p>Habitación con dos camas</p>                  			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
-	 </div><!-- /.row -->  
+	 </div><!-- /.row -->
+
 <!-- Tercera fila de fotos -->
 	<div class="row">     
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Dormitorio 2 camas B Lit.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Dormitorio-2-camas-B-Lit.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Habitación con dos camas y cómoda</p>                             			
                     		</div> <!-- caption -->
@@ -94,15 +97,15 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Dormit pequeno 1 Cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Dormit-pequeno-1-Cut.png' %}" alt="">
                     		<div class="caption">                        	
-                            <p>Habitación con una cama y salida a terraza y vistas al mar</p>
+                            <p>Habitación con salida a la terraza y vistas al mar</p>
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia CocinaPtas cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-CocinaPtas-cut.png' %}" alt="">
                     <div class="caption">                        	
                             <p>Cocina equipada</p>                         			
                     		</div> <!-- caption -->
@@ -114,7 +117,7 @@
 	<div class="row">	
   		 <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Terraza grande cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Terraza-grande-cut.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Vista desde una de las terrazas</p>                			
                     		</div> <!-- caption -->
@@ -122,7 +125,7 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Piso A Iberia Terraza pequena 1 cut.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Piso-A-Iberia-Terraza-pequena-1-cut.png' %}" alt="">
                     		<div class="caption">                        	
                             <p>Vista desde la terraza del salón</p>       			
                     		</div> <!-- caption -->
@@ -130,7 +133,7 @@
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
         	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 A/Playa1CUT.jpg' %}" alt="">
+    	  		<img src="{% static 'landing/Imagenes/4 A/Playa1CUT.png' %}" alt="">
                     <div class="caption">                        	
                             <p>Vista desde el piso</p>           			
                     		</div> <!-- caption -->
@@ -165,44 +168,42 @@
         </div> <!-- /.col-lg-3 -->
 	</div><!-- /.row -->            
  <!-- Sexta fila de fotos -->
-<!--	<div class="row">          
+<!--	<div class="row">
          <div class="col-lg-4">
-        	<div class="thumbnail">                   	
+        	<div class="thumbnail">
     	  		<img src="{% static 'landing/Imagenes/4 B/4BTerrazaPek_CUT_1wmdf.jpg' %}" alt="Esteponas vistas playa">
-                    <div class="caption">                        	
-                            <p>Terraza salón</p>               			
+                    <div class="caption">
+                            <p>Terraza salón</p>
                     		</div> <!-- caption -->
 <!--          	</div> <!-- thumbnail -->
 <!--        </div> <!-- /.col-lg-3 -->
 <!--        <div class="col-lg-4">
-        	<div class="thumbnail">                   	
+        	<div class="thumbnail">
     	  		<img src="{% static 'landing/Imagenes/4 B/Terraza Grande4BCUT copiawmdf.jpg' %}" alt="Estepona Edificio Iberia paseo marítimo">
-                    <div class="caption">                        	
-                            <p>Vista desde la terraza dormitorios</p>                 			
+                    <div class="caption">
+                            <p>Vista desde la terraza dormitorios</p>
                     		</div> <!-- caption -->
 <!--          	</div> <!-- thumbnail -->
 <!--        </div> <!-- /.col-lg-3 -->
 <!--        <div class="col-lg-4">
-        	<div class="thumbnail">                   	
+        	<div class="thumbnail">
     	  		<img src="{% static 'landing/Imagenes/4 B/Edificio-Iberia-Paseo-Situacion cutwmdf.jpg' %}" alt="Estepona vista del paseo marítimo Eadifico Iberia">
-                    <div class="caption">                        	
-                            <p>Situación privilegiada del edificio</p>                 			
+                    <div class="caption">
+                            <p>Situación privilegiada del edificio</p>
                     		</div> <!-- caption -->
 <!--          	</div> <!-- thumbnail -->
-<!--        </div> <!-- /.col-lg-3 -->           	     
+<!--        </div> <!-- /.col-lg-3 -->
 <!--      </div><!-- /.row -->
 
   <!-- FIN FOTOS -->
       <!-- START THE FEATURETTES -->
 
- 
+
 
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
     </div>
-  </body>
-</html>
 
 {% endblock %}

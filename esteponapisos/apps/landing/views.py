@@ -69,6 +69,9 @@ def contactar(request):
 def mensaje_enviado(request):
     return render(request, 'landing/mensaje-enviado.html')
 
+def menu(request):
+    return render(request, 'landing/inc/menu.html')
+
 
 
 def carrusel(request):
