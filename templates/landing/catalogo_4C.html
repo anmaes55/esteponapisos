@@ -11,6 +11,7 @@
             <br> 
             <h1>Estepona pisos alquiler</h1>
             <p>Pisos con vistas al mar en el centro de Estepona</p>
+			<h3>Haz clic en las fotos para ampliar</h3>
 			<br>
         </div> <!-- container -->
 	</section>
@@ -25,24 +26,30 @@
       <div class="row">
 <!-- Primera fila de fotos -->      
       	<div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/ajedrez 20150924_145728 edited cutwmdf.jpg' %}" alt="Estepona paseo marítimo ajedrez">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img1" src="{% static 'landing/Imagenes/4 C/ajedrez 20150924_145728 edited cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo marítimo ajedrez">
+				</span>
                     		<div class="caption">                        	
                             <p>Situación privilegiada del Edificio</p>             			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/sofa airbnb 20160124_165201cutwmdf.jpg' %}" alt="Estepona vistas salón">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img2" src="{% static 'landing/Imagenes/4 C/sofa airbnb 20160124_165201cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona vistas salón">
+				</span>
                     		<div class="caption">                        	
                             <p>Sofá salón</p>            			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/SalonTerraza 2 Cutwmdf.jpg' %}" alt="">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img3" src="{% static 'landing/Imagenes/4 C/SalonTerraza 2 Cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="">
+				</span>
                     <div class="caption">                        	
                             <p>Salón comedor</p>                			
                     		</div> <!-- caption -->
@@ -53,24 +60,30 @@
 <!-- Segunda fila de fotos -->
 	<div class="row">
   		<div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/20160124_170535cutwmdf.jpg' %}" alt="Edificio Iberia Estepona terraza">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img4" src="{% static 'landing/Imagenes/4 C/20160124_170535cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Edificio Iberia Estepona terraza">
+				</span>
                     		<div class="caption">                        	
                             <p>Salón</p>                 			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/20160205_163126cutwmdf.jpg' %}" alt="Estepona alquilar piso Iberia">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img5" src="{% static 'landing/Imagenes/4 C/20160205_163126cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona alquilar piso Iberia">
+				</span>
                     		<div class="caption">                        	
                             <p>Salón comedor</p>            			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/20160124_170251cutwmdf.jpg' %}" alt="Estepona comedor">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img6" src="{% static 'landing/Imagenes/4 C/20160124_170251cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona comedor">
+				</span>
                     <div class="caption">                        	
                             <p>Salón comedor</p>                			
                     		</div> <!-- caption -->
@@ -80,24 +93,30 @@
 <!-- Tercera fila de fotos -->
 	<div class="row">     
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Salon y pasillowmdf.jpg' %}" alt="Avenida de España 13, Estepona, 4C">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img7" src="{% static 'landing/Imagenes/4 C/Salon y pasillowmdf.jpg' %}" onClick="reply_click(this.id)" alt="Avenida de España 13, Estepona, 4C">
+				</span>
                     		<div class="caption">                        	
                             <p>Salón y pasillo</p>               			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit grandeCutwmdf.jpg' %}" alt="Dormir en Estepona">
+        	<div class="thumbnail">
+				<span class="image fit">
+					<img id="img8" src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit grandeCutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Dormir en Estepona">
+				</span>
                     		<div class="caption">                        	
                             <p>Habitación con dos camas y salida a terraza</p>               			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit grande balconCUTwmdf.jpg' %}" alt="Estepona dormir paseo marítimo">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img9" src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit grande balconCUTwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona dormir paseo marítimo">
+				</span>
                     <div class="caption">                        	
                             <p>Habitación principal con salida a terraza</p>                			
                     		</div> <!-- caption -->
@@ -108,24 +127,30 @@
 <!-- Cuarta fila de fotos -->  
 	<div class="row">	
   		 <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit pequeno 1Cutwmdf.jpg' %}" alt="Estepona habitación vistas al mar">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img10" src="{% static 'landing/Imagenes/4 C/Iberia 4C dormit pequeno 1Cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona habitación vistas al mar">
+				</span>
                     		<div class="caption">                        	
                             <p>Habitación con dos camas y vistas al mar</p>                			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/DSCF6441cutwmdf.jpg' %}" alt="Av de España 13 4C, Estepona">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img11" src="{% static 'landing/Imagenes/4 C/DSCF6441cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Av de España 13 4C, Estepona">
+				</span>
                     		<div class="caption">                        	
                             <p>Habitación con dos camas y salida a terraza</p>               			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/DSCF5784 editedcutwmdf.jpg' %}" alt="Estepona paseo marítimo cocina">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img12" src="{% static 'landing/Imagenes/4 C/DSCF5784 editedcutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo desde la terraza">
+				</span>
                     <div class="caption">                        	
                             <p>Cocina equipada</p>               			
                     		</div> <!-- caption -->
@@ -135,25 +160,31 @@
  <!-- Quinta fila de fotos -->       
 	<div class="row">      
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/4C-Cocina-Modf-2cutwmdf.jpg' %}" alt="Estepona habitación vistas al mar">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img13" src="{% static 'landing/Imagenes/4 C/4C-Cocina-Modf-2cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona habitación vistas al mar">
+				</span>
                     		<div class="caption">                        	
                             <p>Cocina</p>                   			                			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/DSCF5786 editedcutwmdf.jpg' %}">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img14" src="{% static 'landing/Imagenes/4 C/DSCF5786 editedcutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona el Faro">
+				</span>
                     		<div class="caption">                        	
                             <p>Cocina y lavadero</p>          			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/DSCF6443cutwmdf.jpg' %}" alt="Estepona paseo marítimo cocina">
-                    <div class="caption">                        	
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img15" src="{% static 'landing/Imagenes/4 C/DSCF6443cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo marítimo">
+				</span>
+                    		<div class="caption">
                             <p>Cuarto de baño</p>                			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
@@ -162,54 +193,64 @@
  <!-- Sexta fila de fotos -->
 	<div class="row">          
          <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/CuartoBano4Cwmdf.jpg' %}" alt="Estepona habitación vistas al mar">
+        	<div class="thumbnail">
+				<span class="image fit">
+					<img id="img16" src="{% static 'landing/Imagenes/4 C/CuartoBano4Cwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona habitación vistas al mar" />
+				</span>
                     		<div class="caption">                        	
                             <p>Cuarto de baño ducha</p>                			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Entradawmdf.jpg' %}">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img17" src="{% static 'landing/Imagenes/4 C/Entradawmdf.jpg' %}" onClick="reply_click(this.id)" alt="" />
+				</span>
                     		<div class="caption">                        	
                             <p>Entrada adaptada a discapacitados</p>                 			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Iberia 4C terraza grande 2Cutwmdf.jpg' %}" alt="Estepona paseo marítimo cocina">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img18" src="{% static 'landing/Imagenes/4 C/Iberia 4C terraza grande 2Cutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo marítimo antiguo" />
+				</span>
                     <div class="caption">                        	
                             <p>Vista desde terraza dormitorios</p>                   			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
-        </div> <!-- /.col-lg-3 -->    
-        	
-     
+        </div> <!-- /.col-lg-3 -->
       </div><!-- /.row -->
 
 <!-- Séptima fila de fotos -->
 	<div class="row">          
          <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/Iberia 4C terraza grandeCutmjwmdf.jpg' %}" alt="Estepona habitación vistas al mar">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img19" src="{% static 'landing/Imagenes/4 C/Iberia 4C terraza grandeCutmjwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona habitación vistas al mar">
+				</span>
                     		<div class="caption">                        	
                             <p>Vista desde la terraza</p>                 			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/View from balcony 4Ccutwmdf.jpg' %}">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img20" src="{% static 'landing/Imagenes/4 C/View from balcony 4Ccutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="">
+				</span>
                     		<div class="caption">                        	
                             <p>Vista desde la terraza. Al fondo Gibraltar</p>               			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/20150819_184208editedcutwmdf.jpg' %}" alt="Estepona paseo marítimo cocina">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img21" src="{% static 'landing/Imagenes/4 C/20150819_184208editedcutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo marítimo">
+				</span>
                     <div class="caption">                        	
                             <p>Situación del piso desde el paseo marítimo</p>
                     		</div> <!-- caption -->
@@ -220,24 +261,30 @@
 <!-- Octava fila de fotos -->
 	<div class="row">          
          <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/20150819_185205 Defcutwmdf.jpg' %}" alt="Estepona habitación vistas al mar">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img22" src="{% static 'landing/Imagenes/4 C/20150819_185205 Defcutwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona habitación vistas al mar">
+				</span>
                     		<div class="caption">                        	
                             <p>Situación del piso desde el centro de Estepona</p>
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/13568fd1_originalwmdf.jpg' %}">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img23" src="{% static 'landing/Imagenes/4 C/13568fd1_originalwmdf.jpg' %}" onClick="reply_click(this.id)" alt="">
+				</span>
                     		<div class="caption">                        	
                             <p>Paseo marítimo Estepona desde abajo del edificio</p>       			
                     		</div> <!-- caption -->
           	</div> <!-- thumbnail -->
         </div> <!-- /.col-lg-3 -->
         <div class="col-lg-4">
-        	<div class="thumbnail">                   	
-    	  		<img src="{% static 'landing/Imagenes/4 C/e7bfdec6_originalwmdf.jpg' %}" alt="Estepona paseo marítimo cocina">
+        	<div class="thumbnail">
+				<span class="image fit">
+    	  			<img id="img24" src="{% static 'landing/Imagenes/4 C/e7bfdec6_originalwmdf.jpg' %}" onClick="reply_click(this.id)" alt="Estepona paseo marítimo cocina">
+				</span>
                     <div class="caption">                        	
                             <p>Situación privilegiada de Edificio Iberia</p>
                     		</div> <!-- caption -->
